@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+        <title>My first App/title>
+</head>
+<body>
+        <button id='hello'>Do it</button>
+        <button id='clear'>Clear</button>
+        <div id='results'></div>
+        
+        <script src='js/zepto.min.js'></script>
+        <script src='js/hello.js'></script>
+        <script>
+                $('#hello').click(function(){
+                
+                        HELLO.DoIt($('#results'))
+                });
+                $('#clear').click(function(){
+                
+                        $('#results').html('')
+                });
+        </script>
+        
+</body>
+</html>
